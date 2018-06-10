@@ -172,12 +172,12 @@ public class LinkedIList<E> extends AbstractIList<E> {
         }else{
             Node<E> current = head;
             for(int i = 0; i < size; i++){
-                current = current.next;
                 if(current.element.equals(e)){
                     return i;
                 }
+                current = current.next;
             }
-            return 0;
+            return -1;
         }
     }
 

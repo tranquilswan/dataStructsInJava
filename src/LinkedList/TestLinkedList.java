@@ -23,12 +23,14 @@ public class TestLinkedList {
 
         list.add(3,"Kyoto");
 
+        list.add(2, "Munich");
+
         System.out.println("(2) "+ list);
-        list.set(2,"HongKong");
+        list.set(2,"Hong Kong");
 
         System.out.println("(A) Index of tokyo:  " + list.indexOf("Tokyo"));
 
-        System.out.println("(B) Index of NewYork: "+ list.indexOf("New York"));
+        System.out.println("(B) Index of NewYork: "+ (list.indexOf("New York")==-1?"City Not Present":list.indexOf("New York")));
 
         System.out.println("(4) "+ list);
 
