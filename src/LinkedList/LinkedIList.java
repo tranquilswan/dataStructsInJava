@@ -5,6 +5,15 @@ import LinkedList.Node;
 
 import java.util.Iterator;
 
+/**
+    The difference between an arraylist and a linkedList?
+    -Upon adding or deleting, an arraylist requires you to shift the existing nodes to the left or right.
+        -it uses an array structure under the hood so if the size of the struct has to be increased, a new larger struct
+        has to be created to accommodate the old and new elements.
+    -In a linked list, when deleted or adding a node, you can simply re-point previous node to the new node and the
+        new node to the next node. much less work and the struct is inherently dynamic.
+ */
+
 public class LinkedIList<E> extends AbstractIList<E> {
 
     private Node<E> head, tail;

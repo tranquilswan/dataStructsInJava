@@ -41,6 +41,5 @@ public class TestLinkedList {
 
         System.out.println("(F) Does the list contain Kyoto? : " + list.contains("Kyoto"));
         System.out.println("(F) Does the list contain London? : " + list.contains("London"));
-
     }
 }
